@@ -43,7 +43,7 @@ public class Game {
 
         if (!done) {
             score += levelOne.getPoints();
-            done = levelTwo.goalReached();
+            done = done && levelTwo.goalReached();
         }
         if (!done) {
             score += levelTwo.getPoints();
